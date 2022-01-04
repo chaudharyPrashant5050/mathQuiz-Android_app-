@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="273dp">
+
+
+        <ImageView
+            android:id="@+id/crossId"
+            android:layout_width="118dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="4dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/questionID"
+            app:srcCompat="@drawable/cross" />
+
+        <TextView
+            android:id="@+id/questionID"
+            style="@style/keypad"
+            android:layout_width="335dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/crossId"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.264"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/answerID"
+            style="@style/keypad"
+            android:layout_width="329dp"
+            android:layout_height="75dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/questionID"
+            app:layout_constraintVertical_bias="0.542"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/AC"
+            style="@style/operationBtn"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="operation"
+            android:text="AC"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/back"
+            style="@style/operationBtn"
+            android:layout_width="107dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text="◀"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <Button
+            android:id="@+id/one"
+            style="@style/numberBtn"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="1"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/two"
+            style="@style/numberBtn"
+            android:layout_width="107dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text="2"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/three"
+            style="@style/numberBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text="3"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <Button
+            android:id="@+id/four"
+            style="@style/numberBtn"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="4"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/five"
+            style="@style/numberBtn"
+            android:layout_width="107dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text="5"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/six"
+            style="@style/numberBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text="6"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <Button
+            android:id="@+id/seven"
+            style="@style/numberBtn"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="7"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/eight"
+            style="@style/numberBtn"
+            android:layout_width="107dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text="8"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/nine"
+            style="@style/numberBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text="9"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <Button
+            android:id="@+id/zero"
+            style="@style/numberBtn"
+            android:layout_width="7dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="0"
+            android:textStyle="bold" />
+
+        <Button
+
+            android:id="@+id/submit"
+
+            style="@style/operationBtn"
+
+
+
+            android:layout_width="107dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@color/orange"
+
+            android:text="SUBMIT"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
