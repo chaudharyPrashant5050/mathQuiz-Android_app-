@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/x/AndroidStudioProjects/mathQuiz/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/x/AndroidStudioProjects/mathQuiz/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1671875" />
+        <entry key="..\:/Users/x/AndroidStudioProjects/mathQuiz/app/src/main/res/layout/activity_animation_screen.xml" value="0.22" />
+        <entry key="..\:/Users/x/AndroidStudioProjects/mathQuiz/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Users/x/AndroidStudioProjects/mathQuiz/app/src/main/res/layout/activity_result.xml" value="0.2" />
+        <entry key="..\:/Users/x/AndroidStudioProjects/mathQuiz/app/src/main/res/layout/activity_set_level.xml" value="0.155078125" />
       </map>
     </option>
   </component>
